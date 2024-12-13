@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Applicant Dashboard</title>
+</head>
+<body>
+    <h1>Applicant Dashboard</h1>
+    <h2>Available Jobs</h2>
+    <ul id="job-list">
+        <!-- Jobs will be dynamically populated -->
+    </ul>
+    <h2>Follow Up</h2>
+    <form action="backend/applicant/follow_up.php" method="post">
+        <textarea name="message" placeholder="Write your follow-up message here" required></textarea>
+        <input type="hidden" name="applicant_id" value="APPLICANT_USER_ID">
+        <input type="hidden" name="hr_id" value="HR_USER_ID">
+        <button type="submit">Send Follow-Up</button>
+    </form>
+</body>
+</html>

@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HR Dashboard</title>
+</head>
+<body>
+    <h1>HR Dashboard</h1>
+    <h2>Create Job Post</h2>
+    <form action="backend/hr/create_job.php" method="post">
+        <input type="text" name="title" placeholder="Job Title" required>
+        <textarea name="description" placeholder="Job Description" required></textarea>
+        <input type="hidden" name="created_by" value="HR_USER_ID">
+        <button type="submit">Create Job</button>
+    </form>
+    <h2>Manage Applications</h2>
+    <ul id="applications-list">
+        <!-- Applications will be dynamically populated -->
+    </ul>
+</body>
+</html>
